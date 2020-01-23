@@ -7,7 +7,7 @@ setup(
   version='1.0',
   packages=['hyperglass_bird'],
   entry_points = {
-    'console_scripts': ['hyperglass-bird=hyperglass_bird.hyperglass_bird']
+    'console_scripts': ['hyperglass-bird=hyperglass_bird.hyperglass_bird:main']
   },
   install_requires = [
     'toml',

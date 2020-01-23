@@ -57,6 +57,6 @@ def bird():
 
 
 # Simple Waitress WSGI implementation
-if __name__ == "__main__":
+def main():
     logger.debug("Starting hyperglass-bird API via Waitress...")
     serve(app, host=api["listen_addr"], port=api["port"])
