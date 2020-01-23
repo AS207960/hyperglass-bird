@@ -12,11 +12,8 @@ import toml
 import logzero
 from logzero import logger
 
-# Project Directories
-this_directory = os.path.dirname(os.path.abspath(__file__))
-
 # TOML Imports
-conf = toml.load(os.path.join(this_directory, "configuration.toml"))
+conf = toml.load("configuration.toml")
 
 
 def debug_state():
